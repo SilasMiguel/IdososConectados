@@ -52,7 +52,6 @@ li {
 }
 
 li img {
-    margin-right: 20px;
     height: 30px;
     width: 30px;
 }
@@ -61,7 +60,7 @@ li a{
 }
 
 main {
-    padding-top: 200px;
+    
 }
 
 section {
@@ -77,6 +76,7 @@ section h2{
 }
 
 article {
+    padding-top: 13rem;
     margin-top: 6px;
     display: flex;
     flex-direction: row;
