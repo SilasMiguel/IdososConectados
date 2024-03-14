@@ -4,6 +4,9 @@
     box-sizing: border-box;
     
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: rgb(255, 255, 255);
@@ -60,16 +63,13 @@ li a{
 }
 
 #separador {
-    padding-top: 200px;
+    padding-top: 250px;
 }
 
 main {
     
 }
 
-.introducao {
-    
-}
 
 section {
     margin: auto;
@@ -84,7 +84,7 @@ section h2{
 }
 
 article {
-    padding-top: 13rem;
+    padding-top: 280px;
     margin-top: 6px;
     display: flex;
     flex-direction: row;
