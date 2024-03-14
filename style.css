@@ -4,17 +4,20 @@
     box-sizing: border-box;
     
 }
+
 body {
     background-color: rgb(255, 255, 255);
-    background-size: cover;
 }
 
-
 header {
+    background-color: rgb(138, 153, 136);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
 }
 
 .img-h1 {
@@ -30,10 +33,35 @@ header h1 {
     font-size: 40px;
 }
 
+nav {
+    background-color: rgb(165, 46, 46);
+    width: 100%;
+    padding: 7px;
+}
+
 nav ul{
+    gap: 20px;
     display: flex;
     flex-direction: row;
     list-style: none;
+    justify-content: center;
+}
+li {
+    display: flex;
+    align-items: center;
+}
+
+li img {
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+}
+li a{
+    color: white;
+}
+
+main {
+    padding-top: 200px;
 }
 
 section {
@@ -68,4 +96,25 @@ article {
 article video {
     align-items: initial;
     width: 300px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(138, 153, 136);
+    height: 160px;
+}
+
+footer form {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form button {
+    width: 50px;
+    margin: 0 auto;
 }
