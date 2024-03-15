@@ -127,3 +127,12 @@ table form button {
     width: 50px;
     margin: 0 auto;
 }
+
+.formulario {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.formulario table {
+    margin: 0 auto; 
+}
