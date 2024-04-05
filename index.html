@@ -1,243 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link id="favicon" rel="shortcut icon" href="./assets/logo-circular.jpg" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Idosos Conectados</title>
 </head>
-
 <body>
-    <header>
-            <table border="0">
-                <tr>
-                    <td>
-                        <img id="logo-marca" src="./assets/logo-editada.jpg" alt="">
-                    </td>
-                    <td>
-                        <h1>INTRODUZINDO IDOSOS A TECNOLOGIA</h1>
-                    </td>
-                </tr>
-            </table>
-        
-        <nav>
-            <ul>
-                <li><img src="./assets/click.png" alt="click"></li>
-                <li><a href="#whatsapp">WhatsApp</a></li>
-                <li><a href="#uber">Uber</a></li>
-                <li><a href="#ifood">iFood</a></li>
-                <li><a href="#play-store">Play Store</a></li>
-                <li><a href="#pix">Pix</a></li>
-                <li><a href="#caixa-eletronico">Caixa Eletrônico</a></li>
-                <li><a href="#licenciamento">Licenciamento</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header class="header-content">
+            <div class="logo-content">
+                <img src="./sources/imgs/logo-diferente2.png" alt="Logo imagem">
+                <h1>IDOSOS CONECTADOS</h1>
+            </div>
+            <div class="nav-content">
+                <nav>
+                    <ul>
+                        <li><a onclick="scrollToSection('inicio')">Inicio</a></li>
+                        <div class="alinhador">
 
-    <div id="separador"></div>
-    
-    <main>
-        <section class="introducao">
-            <h1> Introdução</h1>
-            <audio src="./audios/introducao.mp3" controls ></audio>
-            <p>Está com dificuldades para utilizar tecnologias básicas que precisamos no dia a dia ?
-            Clique nos textos acima que iremos lhe ensinar o passo a passo de como usar a tecnologia desejada
-            sem enrrolação.</p>
-        </section>
-        <section class="section-articles">
+                            <li class="dropdown">
+                                <a onclick="drop()">Tutoriais</a>
+                                
+                                <div class="dropdown-menu">
+                                    <a onclick="scrollToSection('zap')">zap</a>
+                                    <a onclick="scrollToSection('uber')">Uber</a>
+                                    <a onclick="scrollToSection('ifood')">iFood</a>
+                                    <a onclick="scrollToSection('playstore')">PlayStore</a>
+                                </div>
+                            </li>
+                        </div>
+                        <li><a href="#" id="">Sobre</a></li>
+                        <li><a href="#" id="">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-            <h2>Vídeos</h2>
-
-            <article id="whatsapp">
-                <div class="article-title">
-                    <h3>COMO INSTALAR O ZAP!</h3>
-                </div>
-
-                <div class="article-content">
-                    <div class="article-img">
-                        <img src="https://th.bing.com/th/id/OIP.q5z9hnQzW6L7e2X-Ht_UXwHaHa?w=1600&h=1600&rs=1&pid=ImgDetMain" alt="">
+        <main class="main-content">
+            <section class="section-content" id="inicio">
+                <h3>Introducao</h3>
+                <p>descricao Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, tempora provident? Sunt aperiam repudiandae expedita voluptates sed reiciendis cumque cupiditate repellendus, eum velit ullam mollitia nam eaque atque. Iusto, porro?</p>
+                
+                <article class="article-content" id="zap">
+                    <div class="video-content">
+                        <iframe src="https://www.youtube.com/embed/pSzAFlKw0EA" frameborder="0"></iframe>
                     </div>
-                    <div class="article-description">
+                    <div class="item-content">
+                        <h3>COMO INSTALAR O ZAP!</h3>
                         <p>Nosso primeiro tutorial é um guia rápido e eficiente para ajudar os usuários a configurar o WhatsApp em seus dispositivos móveis. Com uma duração de apenas quatro minutos, o vídeo apresenta instruções simples e diretas, acompanhadas de demonstrações visuais claras..</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="article-video">
-                    <iframe src="https://www.youtube.com/embed/pSzAFlKw0EA" frameborder="0"></iframe>
-                </div>
-            </article>
-
-            <article id="uber">
-                <div class="article-title">
-                    <h3>COMO PEDIR UM UBER!</h3>
-                </div>
-
-                <div class="article-content">
-                    <div class="article-img">
-                        <img src="https://techstory.in/wp-content/uploads/2018/07/uber.jpg" alt="">
+                <article class="article-content" id="uber">
+                    <div class="video-content">
+                        <iframe src="https://www.youtube.com/embed/rreTO8SKLvM" frameborder="0"></iframe>
                     </div>
-                    <div class="article-description">
+                    <div class="item-content">
+                        <h3>COMO PEDIR UM UBER!</h3>
                         <p>Este vídeo tutorial foi cuidadosamente desenvolvido para ajudar os idosos a solicitarem um Uber de maneira fácil e segura. Com uma linguagem clara e instruções simples, este guia passo a passo é perfeito para idosos que desejam utilizar esse serviço de transporte conveniente..</p>
-                </div>
-                </div>
-
-                <div class="article-video">
-                    <iframe src="https://www.youtube.com/embed/rreTO8SKLvM" frameborder="0"></iframe>
-                </div>
-            </article>
-
-            <article id="ifood">
-                <div class="article-title">
-                    <h3>COMO PEDIR IFOOD(ENTREGA DE LANCHE)</h3>
-                </div>
-
-                <div class="article-content">
-                    <div class="article-img">
-                        <img src="https://dlojavirtual.com/wp-content/uploads/2020/04/iFood-como-planejar-seu-delivery.jpg" alt="">
                     </div>
-                    <div class="article-description">
+                </article>
+
+                <article class="article-content" id="ifood">
+                    <div class="video-content">
+                        <iframe src="https://www.youtube.com/embed/6UmqDKgCU8M" frameborder="0"></iframe>
+                    </div>
+                    <div class="item-content">
+                        <h3>COMO PEDIR IFOOD(ENTREGA DE LANCHE)</h3>
                         <p>Neste tutorial, vamos ensinar aos idosos como usar o iFood para pedir refeições online. Com orientações passo a passo, eles aprenderão a aproveitar a conveniência de receber comida em casa, tornando suas refeições mais práticas e acessíveis.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="article-video">
-                    <iframe src="https://www.youtube.com/embed/6UmqDKgCU8M" frameborder="0"></iframe>
-                </div>
-            </article>
-
-            <article id="play-store">
-                <div class="article-title">
-                    <h3>COMO INSTALAR UM APLICATIVO NA PLAY STORE!</h3>
-                </div>
-
-                <div class="article-content">
-                    <div class="article-img">
-                        <img src="https://th.bing.com/th/id/OIP.8kZj532jgStisLt96RAjsQHaEK?rs=1&pid=ImgDetMain" alt="">
+                <article class="article-content" id="playstore">
+                    <div class="video-content">
+                        <iframe src="https://www.youtube.com/embed/A1J9ayHasEw" frameborder="0"></iframe>
                     </div>
-                    <div class="article-description">
+                    <div class="item-content">
+                        <h3>COMO INSTALAR UM APLICATIVO NA PLAY STORE!</h3>
                         <p>Este vídeo tutorial foi criado especialmente para ajudar os idosos a navegar na Play Store e instalar aplicativos em seus dispositivos Android de maneira simples e descomplicada. Com uma linguagem clara e instruções passo a passo, este guia é ideal para idosos que desejam aproveitar os recursos oferecidos pelos aplicativos disponíveis na Play Store..</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="article-video">
-                    <iframe src="https://www.youtube.com/embed/A1J9ayHasEw" frameborder="0"></iframe>
-                </div>
-            </article>
-            
-            <article id="pix">
-                <div class="article-title">
-                    <h3>COMO FAZER UM PIX!</h3>
-                </div>
-
-                <div class="article-content">
-                    <div class="article-img">
-                        <img src="https://th.bing.com/th/id/OIP.9Yql3cyZMn6ll-ud8EMoKAHaEY?rs=1&pid=ImgDetMain" alt="">
+                <article class="article-content" id="pix">
+                    <div class="video-content">
+                        <iframe src="https://www.youtube.com/embed/xQOHrGDzVuU" frameborder="0"></iframe>
                     </div>
-                    <div class="article-description">
+                    <div class="item-content">
+                        <h3>COMO FAZER UM PIX!</h3>
                         <p>Este tutorial foi criado com o intuito de ajudar os idosos a entender e realizar transações financeiras seguras usando o PIX, um sistema de pagamentos instantâneos popular no Brasil. Com instruções simples e fáceis de seguir, este guia é ideal para idosos que desejam utilizar essa forma de pagamento de maneira rápida e conveniente..</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="article-video">
-                    <iframe src="https://www.youtube.com/embed/xQOHrGDzVuU" frameborder="0"></iframe>
-                </div>
-            </article>    
-
-            <article id="caixa-eletronico">
-                <div class="article-title">
-                    <h3>COMO FAZER SAQUE NO CAIXA ELETRÔNICO!</h3>
-                </div>
-
-                <div class="article-content">
-                    <div class="article-img">
-                        <img src="https://th.bing.com/th/id/OIP.9_QbxDtAfAlSGNeyeXG_1wHaE4?rs=1&pid=ImgDetMain" alt="">
+                <article class="article-content" id="saque">
+                    <div class="video-content">
+                        <iframe src="https://www.youtube.com/embed/PTrwhQKKqUM" frameborder="0"></iframe>
                     </div>
-                    <div class="article-description">
+                    <div class="item-content">
+                        <h3>COMO FAZER SAQUE NO CAIXA ELETRÔNICO!</h3>
                         <p>Este tutorial foi criado para ajudar os idosos a utilizar o caixa eletrônico de maneira segura e eficiente, proporcionando-lhes autonomia no acesso aos serviços bancários. Com instruções simples e claras, este guia aborda os principais passos envolvidos no uso do caixa eletrônico, desde a inserção do cartão até a realização de transações.                        .</p>
-                </div>
-                </div>
-
-                <div class="article-video">
-                    <iframe src="https://www.youtube.com/embed/PTrwhQKKqUM" frameborder="0"></iframe>
-                </div>
-            </article>
-
-            <article id="licenciamento">
-                <div class="article-title">
-                    <h3>COMO IMPRIMIR O LINCENCIAMENTO DO VEÍCULO!</h3>
-                </div>
-
-                <div class="article-content">
-                    <div class="article-img">
-                        <img src="https://th.bing.com/th/id/OIP.JW9iOG5D1xW5xb0YqqELUgHaEk?rs=1&pid=ImgDetMain" alt="">
                     </div>
-                    <div class="article-description">
+                </article>
+
+                <article class="article-content" id="licenciamento">
+                    <div class="video-content">
+                        <iframe src="https://www.youtube.com/embed/zFAUcAclUNg" frameborder="0"></iframe>
+                    </div>
+                    <div class="item-content">
+                        <h3>COMO IMPRIMIR O LINCENCIAMENTO DO VEÍCULO!</h3>
                         <p>Este tutorial foi especialmente criado para ajudar os idosos a imprimir o licenciamento do veículo de maneira simples e conveniente, sem a necessidade de sair de casa. Com instruções passo a passo claras e fáceis de seguir, este guia é projetado para fornecer aos idosos independência e praticidade ao realizar esse importante procedimento..</p>
                     </div>
-                </div>
+                </article>
+            </section>
+        </main>
 
-                <div class="article-video">
-                    <iframe src="https://www.youtube.com/embed/zFAUcAclUNg" frameborder="0"></iframe>
-                </div>
-            </article>
-
-        </section>
-    </main>
-        <div class="formulario">
-            <table border="1">
-                <form action="">
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Nome...">
-                        </td>
-                        <td>
-                            <input type="text" placeholder="E-mail...">
-                        </td>
-                        <td>
-                            <button>Enviar</button>
-                        </td>
-                    </tr>
-                    
-                </form>
-            </table>
-        </div>
-    <footer>
-        <div class="copyright">
-            <h5>@TODOS OS DIREITOS RESERVADOS</h5>
+        <div class="feedback-content">
+            <form action="">
+                <label for="">Tem alguma Sugestao?</label>
+                <input type="e-mail" placeholder="E-mail de contato...">
+                <input type="text" placeholder="Deixe seu Feedback...">
+            </form>
         </div>
 
-        <div class="integrantes">
-            <table>
-                <tr>
-                    <td>Integrantes</td>
-                    <td>Contato</td>
-                    <td>E-mail</td>
-                </tr>
-                <tr>
-                    <td>Yuri</td>
-                    <td>99 99999-9999</td>
-                    <td>yuri.santos@maisunifacisa.com.br</td>
-                </tr>
-                <tr>
-                    <td>Silas</td>
-                    <td>99 99999-9999</td>
-                    <td>silas.sarmento@maisunifacisa.com.br</td>
-                </tr>
-                <tr>
-                    <td>Alex</td>
-                    <td>99 99999-9999</td>
-                    <td>alex.dos@maisunifacisa.com.br</td>
-                </tr>
-                <tr>
-                    <td>João Vitor</td>
-                    <td>99 99999-9999</td>
-                    <td>joao.vitor.pereira.silva@maisunifacisa.com.br</td>
-                </tr>
-            </table>
-        </div>
-    </footer>
-    
+        <footer>
+            <div class="footer-content">
+                <h3>footer</h3>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
