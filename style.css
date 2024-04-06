@@ -26,7 +26,7 @@ a {
 /* HEADER CONTAINER */
 .header-container {
     grid-area: header;
-    background-color: #f9f9f9;
+    background-color: rgba(96, 154, 240, 1);
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -40,9 +40,10 @@ a {
         align-items: center;
         gap: 10px;
         & img {
-            width: 65px;
+            width: 66px;
         }
         & h1{
+            color: white;
             font-size: 22px;
         }
     }
@@ -56,15 +57,77 @@ a {
             font-weight: bold;
 
             & li {
-                background-color: rgba(96, 154, 240, 0.829);
+                background-color: white;
                 border-radius: 10px;
                 padding: 9px;
                 font-size: 20px;
-                & a:hover {
-                    color: #f9f9f9;
-                }
+            }
+            & li:hover {
+                transform: scale(1.1);
             }
     }
+}
+
+.header-mobile {
+    display: none;
+}
+
+.escurecedor {
+    height: 100vh;
+    width: 0vh;
+    background-color: #000000d5;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    
+}
+
+.menu-lateral.abrir-menu {
+    width: 70%;
+    transition: 0.5s;
+}
+.menu-lateral.abrir-menu ~ .escurecedor{
+    width: 100vh;
+    
+}
+
+.menu-lateral {
+    height: 100vh;
+    width: 0%;
+    background-color: rgba(96, 154, 240, 1);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+}
+
+.menu-lateral .botao-close {
+    margin: 10px;
+}
+
+.menu-lateral .botao-close i{
+    font-size: 60px;
+}
+
+.menu-lateral nav ul {
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu-lateral nav ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 4% 20px;
+}
+
+.menu-lateral nav ul li a:hover {
+    background-color: #f9f9f93b;
+    color: #3a3a3a;
 }
 
 /* MAIN CONTAINER */
@@ -74,6 +137,11 @@ a {
     grid-area: main;
     display: flex;
     flex-direction: column;
+
+    & .introducao {
+        margin: 0 15px;
+    }
+    
     
     /* SECTION CONTENT */
     & .section-content {
@@ -94,12 +162,13 @@ a {
                     flex-direction: column;
                     align-items: center;
                     & img{
-                        width: 380px;
+                        width: 100%;
+                        border-radius: 10px;
                     }
                 }
             }
             & .item-content:hover {
-                transform: scale(1.1)
+                transform: scale(1.1);
             }
         }
     }
@@ -115,7 +184,7 @@ a {
             text-decoration: none;
         }
         & a.active {
-            background-color: rgba(96, 154, 240, 0.829);
+            background-color: rgba(96, 154, 240, 1);
             color: white;
             border-radius: 5px;
         }   
@@ -193,7 +262,7 @@ a {
 /* FOOTER */
 .footer-container {
     grid-area: footer;
-    background-color: rgba(96, 154, 240, 0.829);
+    background-color: rgba(96, 154, 240, 1);
     padding: 40px 0 0 0;
     & .footer-content {
     width: 100%;
@@ -209,20 +278,67 @@ a {
             text-align: center;
             align-items: center;
             justify-content: center;
-            gap: 10px;
             margin: 10px 0 30px 0;
             & img{
                 width: 40px;
             }
+            & a {
+                color: white;
+                padding: 9px;
+            }
             & a:hover {
-                color: #f9f9f9;
+                background-color: #f9f9f93b;
+                border-radius: 8px;
+                
             }
         }
         & .footer-bottom {
+            color: white;
             font-size: 9pt;
             text-align: center;
             padding: 20px 0 30px 0;
             border-top: 1px solid rgba(0, 0, 0, 0.295);
         }
     }
+}
+@media (max-width: 1037px) {
+    .main-container .section-content {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .main-container .section-content .article-content .item-content a img{
+        width: 60%;
+        min-width: 340px;
+    }
+}
+
+@media (max-width: 724px) {
+    .header-container {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+        background-color: rgba(96, 154, 240, 1);
+        & .logo-content{
+            display: flex;
+            align-items: center;
+            margin: auto;
+            gap: 10px;
+            & img {
+                width: 57px;
+            }
+            & h1{
+                color: white;
+                font-size: 19px;
+                
+            }
+        }
+
+        & i {
+            color: white;
+            font-size: 40px;
+        }
+        
+    }
+
 }

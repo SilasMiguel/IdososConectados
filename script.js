@@ -1,20 +1,16 @@
-function scrollToSection(sectionId) {
-    var section = document.getElementById(sectionId);
-    var sectionPosition = section.offsetTop; // Obtém o topo do eixo Y
-    var mainPadding = 100; // Tamanho do padding do main
+let botaoMenu = document.getElementById('botao-menu');
+let menuLateral = document.getElementById('menu-lateral');
+let escurecedor = document.getElementById('escurecedor');
 
-    // Rola a página até a posição da seção menos o padding do main
-    window.scrollTo({
-        top: sectionPosition - mainPadding,
-        behavior: 'smooth' // Rola suavemente para a posição especificada
-    });
-}
 
-function drop() {
-    var dropdownMenu = document.querySelector('.dropdown-menu');
-    if (dropdownMenu.style.display === 'none') {
-        dropdownMenu.style.display = 'flex';
-    } else {
-        dropdownMenu.style.display = 'none';
-    }
-}
+botaoMenu.addEventListener('click', ()=>{
+    menuLateral.classList.add('abrir-menu');
+})
+
+menuLateral.addEventListener('click', ()=>{
+    menuLateral.classList.remove('abrir-menu');
+})
+
+escurecedor.addEventListener('click', ()=>{
+    menuLateral.classList.remove('abrir-menu');
+})

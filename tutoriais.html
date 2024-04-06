@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-tutoriais.css">
-    <title>FRONT END</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>IC Tutoriais</title>
 </head>
 <body>
     <div class="container">
         <header class="header-container">
             <div class="logo-content">
-                <img src="./sources/imgs/logo-diferente2.png" alt="">
+                <img src="./sources/imgs/logo-branca.png" alt="">
                 <h1>IDOSOS CONECTADOS</h1>
             </div>
             <div class="nav-content">
@@ -24,9 +26,36 @@
             </div>
         </header>
 
+        <header class="header-container header-mobile">
+
+            <div class="logo-content">
+                <img src="./sources/imgs/logo-branca.png" alt="Logo-branca">
+                <h1>IDOSOS CONECTADOS</h1>
+            </div>
+            <i class="bi bi-list" id="botao-menu"></i>
+
+            <div class="menu-lateral" id="menu-lateral">
+
+                <div class="botao-close">
+                    <i class="bi bi-x"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./inicio.html" >Inicio</a></li>
+                        <li><a href="/tutoriais.html" >Tutoriais</a></li>
+                        <li><a href="#" >Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="escurecedor" id="escurecedor"></div>
+        </header>
+
         <main class="main-container">
-            <h2>Tutoriais</h2>
-            <p>descricao Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, tempora provident? Sunt aperiam repudiandae expedita voluptates sed reiciendis cumque cupiditate repellendus, eum velit ullam mollitia nam eaque atque. Iusto, porro?</p>
+
+            <div class="introducao">
+                <h2>Tutoriais</h2>
+                <p>descricao Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, tempora provident? Sunt aperiam repudiandae expedita voluptates sed reiciendis cumque cupiditate repellendus, eum velit ullam mollitia nam eaque atque. Iusto, porro?</p>
+            </div>
             
             <section class="section-content">
                 <article class="article-content">
@@ -108,7 +137,7 @@
         <footer class="footer-container">
             <div class="footer-content">
                 <div class="logo-content">
-                    <img src="./sources/imgs/logo-diferente2.png" alt="">
+                    <img src="./sources/imgs/logo-branca.png" alt="">
                 </div>
                 <div class="footer-menu">
                     <img src="./sources/imgs/unifacisa-logo2-removebg-preview.png" alt="">
@@ -121,5 +150,7 @@
         </footer>
 
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
