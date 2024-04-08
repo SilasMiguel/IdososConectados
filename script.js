@@ -16,12 +16,11 @@ escurecedor.addEventListener('click', ()=>{
 })
 
 function toggleExpanded(event, element) {
-    /*event.preventDefault(); // Evita o comportamento padrão do link*/
+
     var articles = document.querySelectorAll('.article-content');
     articles.forEach(function(article) {
         article.classList.remove('expanded');
     });
     element.closest('.article-content').classList.add('expanded');
-
 }
 

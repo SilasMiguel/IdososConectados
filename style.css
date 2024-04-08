@@ -250,7 +250,7 @@ a {
             border-radius: 5px;
         }   
         & a:hover:not(.active) {
-            background-color: #ddd;
+            background-color: rgba(96, 154, 240, 0.3);
             border-radius: 5px;
           }
     }
