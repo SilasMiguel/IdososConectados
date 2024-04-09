@@ -1,6 +1,8 @@
 let botaoMenu = document.getElementById('botao-menu');
 let menuLateral = document.getElementById('menu-lateral');
 let escurecedor = document.getElementById('escurecedor');
+let article = document.querySelector('.article-content');
+let botaoCloseArticle = document.querySelector('.botao-close-article');
 
 
 botaoMenu.addEventListener('click', ()=>{
@@ -25,3 +27,6 @@ function toggleExpanded(event, element) {
 
 }
 
+botaoCloseArticle.addEventListener('click', ()=>{
+    article.classList.remove('expanded');
+})
