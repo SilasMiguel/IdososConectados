@@ -1,8 +1,7 @@
 let botaoMenu = document.getElementById('botao-menu');
 let menuLateral = document.getElementById('menu-lateral');
 let escurecedor = document.getElementById('escurecedor');
-let article = document.querySelector('.article-content');
-let botaoCloseArticle = document.querySelector('.botao-close-article');
+let botoesCloseArticle = document.querySelectorAll('.botao-close-article');
 
 
 botaoMenu.addEventListener('click', ()=>{
@@ -18,14 +17,22 @@ escurecedor.addEventListener('click', ()=>{
 })
 
 function toggleExpanded(event, element) {
-
+    /*event.preventDefault(); // Evita o comportamento padrão do link*/
     var articles = document.querySelectorAll('.article-content');
     articles.forEach(function(article) {
         article.classList.remove('expanded');
     });
     element.closest('.article-content').classList.add('expanded');
+
 }
 
-botaoCloseArticle.addEventListener('click', ()=>{
-    article.classList.remove('expanded');
-})
+botoesCloseArticle.forEach(function(botaoClose) {
+    botaoClose.addEventListener('click', function() {
+        this.closest('.article-content').classList.remove('expanded');
+    });
+});
+
+
+
+
+

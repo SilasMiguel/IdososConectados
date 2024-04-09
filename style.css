@@ -243,6 +243,7 @@ a {
                         margin-top: 15px;
                         display: block;
                         color: #ffffffa2;
+                        height: 30%;
                     }
                     & iframe{
                         border-radius: 10px;
