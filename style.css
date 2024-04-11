@@ -258,6 +258,7 @@ a {
 
     /* PAGINACAO */
     & .pagination {
+        height: 35px;
         display: flex;
         justify-content: center;
         & a {
@@ -301,7 +302,7 @@ a {
         }
         & p{
             padding: 10px;
-            background-color: rgba(103, 158, 240, 0.7);
+            background-color: white;
             border-radius: 15px;
         }
     }
@@ -458,6 +459,12 @@ a {
         }
     }
 }
+
+.p-descricao {
+    margin-top: 10px;
+    text-align: center;
+}
+
 @media (max-width: 1037px) {
     .main-container .section-content {
         grid-template-columns: repeat(1, 1fr);
