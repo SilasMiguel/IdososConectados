@@ -341,7 +341,7 @@ a {
                     text-align: center;
                     font-size: 14pt;
                     width: 100%;
-                    background-color: #444c56;
+                    background-color: #303c49;
                     border: 0.5px solid black;
                     border-radius: 10px;
                     color: rgba(255, 255, 255, 0.788);
@@ -350,6 +350,9 @@ a {
                     & i {
                         margin-right: 12px;
                     }
+                }
+                & li:hover {
+                    background-color: rgba(0, 0, 0, 0.568);
                 }
             }
         }
