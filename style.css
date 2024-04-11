@@ -553,3 +553,20 @@ a {
 }
 
 
+.formulario-feedback form{
+    text-align: center;
+    size: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.formulario-feedback{
+
+    text-align: center;
+
+}
+
+input{
+    width: 390px;
+    height: 30px;
+}
+

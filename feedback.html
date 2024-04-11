@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="shortcut icon" href="./sources/imgs/favicon.png" type="image/x-icon">
-    <title>IC Autores</title>
+
+    <title>IC Tutoriais</title>
 </head>
 <body>
     <div class="container">
@@ -53,32 +53,31 @@
 
         <main class="main-container">
             <div class="background-gradient">
-                <h1>Sobre nós...</h1>
+                <h1>Como podemos melhorara?</h1>
             </div>
            <section id="main-sobre-nos">
             <div class="description-sobre-nos">
-                <p>Quem somos nós? Somos uma equipe dedicada de quatro estudantes de Sistemas de Informação da <a href="https://unifacisa.edu.br" class="p-unifacisa">Unifacisa</a>. Nossa jornada começou quando fomos incumbidos de criar este site inovador, com um propósito singular: <span class="p-strong">oferecer uma plataforma que atenda às necessidades específicas e às curiosidades dos idosos em relação à tecnologia</span>.
-                </p>
-                <p>
-                    Nossa missão é clara: capacitar nossos usuários da terceira idade a se sentirem confiantes e competentes no uso de dispositivos tecnológicos. Reconhecemos que cada indivíduo tem sua própria velocidade e estilo de aprendizado, por isso desenvolvemos nosso conteúdo de forma clara e acessível, adaptado às necessidades específicas de nossos usuários.
-                </p>
-                    Em nosso site, você encontrará uma variedade de tutoriais e vídeos que abordam desde conceitos básicos até dicas avançadas, tudo projetado para ajudá-lo a se sentir confortável e seguro ao explorar a tecnologia. Nossa abordagem centrada no usuário garante que cada passo do processo seja fácil de entender e seguir.
-                <p>
-                    Agradecemos suas sugestões e feedbacks para continuarmos melhorando e atendendo às suas necessidades.
-                </p>
+                <p>Sua opinião é fundamental para nós. Nos ajude a melhorar nossos serviços compartilhando seus comentários. Seja um elogio, uma sugestão ou uma preocupação, cada palavra importa. Obrigado por dedicar seu tempo para nos ajudar a crescer!</p>
             </div>
-
-        </section>
-        <div class="github">
-            <ul>
-                <li class="silas-github"><a href="https://github.com/SilasMiguel" target="_blank"><i class="fa-brands fa-github"></i>Silas Miguel</a></li>
-                <li class="joao-github"><a href="https://github.com/vitorjoao210" target="_blank"><i class="fa-brands fa-github"></i>Joao Vitor</a></li>
-                <li class="yuri-github"><a href="https://github.com/Yuri-Diego" target="_blank"><i class="fa-brands fa-github"></i>Yuri Almeida</a></li>
-                <li class="alex-github"><a href="https://github.com/Alex13junior" target="_blank"><i class="fa-brands fa-github"></i>Alex Junior</a></li>
-            </ul>
-        </div>
-    </main>
-
+           
+            <section>
+                <div class="formulario-feedback">
+                <h2>Envie sua Sugestão</h2>
+                <form action="#" method="POST">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="numero">Número:</label><br>
+                    <input type="tel" id="numero" name="numero" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                    
+                    <label for="sugestao">Sugestão:</label><br>
+                    <textarea id="sugestao" name="sugestao" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <input id = "enviar" type="submit" value="Enviar">
+                </form>            
+                  </div>
+            </section>
+        </main>
         <footer class="footer-container">
             <div class="footer-content">
                 <div class="logo-content">
