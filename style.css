@@ -149,7 +149,6 @@ a {
 
 /* MAIN CONTAINER */
 .main-container {
-    
     margin: 98px auto 20px;
     max-width: 1080px;
     grid-area: main;
@@ -304,6 +303,58 @@ a {
             padding: 10px;
             background-color: rgba(103, 158, 240, 0.7);
             border-radius: 15px;
+        }
+    }
+
+    & #main-sobre-nos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px 0;
+        & .description-sobre-nos {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            font-size: 16pt;
+            margin-bottom: 15px;
+            & h1 {
+                align-self: center;
+            }
+            & .p-unifacisa {
+                color: #01347c;
+                font-weight: bold;
+            }
+            & .p-strong{
+                font-style: italic;
+                background-color: yellow;
+            }
+        }
+        & .github {
+            margin-top: 25px;
+            display: flex;
+            width: 100%;
+            & ul {
+                display: flex;
+                column-gap: 8px;
+                width: 100%;
+                & li{
+                    text-align: center;
+                    font-size: 14pt;
+                    width: 100%;
+                    background-color: #303c49;
+                    border: 0.5px solid black;
+                    border-radius: 10px;
+                    color: rgba(255, 255, 255, 0.788);
+                    padding: 4px;
+                    list-style: none;
+                    & i {
+                        margin-right: 12px;
+                    }
+                }
+                & li:hover {
+                    background-color: rgba(0, 0, 0, 0.568);
+                }
+            }
         }
     }
 
