@@ -162,7 +162,7 @@ a {
         margin: 25px auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: auto;
         gap: 15px;
         & .article-content {
             background-color: #f1f4fc;
@@ -518,6 +518,9 @@ a {
         border-radius: 0;
     }
     .main-container .section-content .article-content.expanded {
+        & .item-content a p {
+            font-size: 15px;
+        }
         border-radius: 0;
         & .botao-close-article {
             margin-left: -10;

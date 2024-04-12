@@ -7,21 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="shortcut icon" href="./sources/imgs/favicon.png" type="image/x-icon">
 
-    <title>IC Tutoriais</title>
+    <title>IC Tutoriais 1</title>
 </head>
 <body>
     <div class="container">
         <header class="header-container">
             <div class="logo-content">
-                <img src="./sources/imgs/logo-branca.png" alt="">
+                <img src="./sources/imgs/logo-branca.png" alt="Logo">
                 <h1>IDOSOS CONECTADOS</h1>
             </div>
             <div class="nav-content">
                 <nav>
                     <ul>
-                        <li><a href="index.html" id="">Inicio</a></li>
-                        <li><a href="tutoriais.html" id="">Tutoriais</a></li>
-                        <li><a href="feedback.html" id="">Feedback</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="tutoriais.html">Tutoriais</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
                     </ul>
                 </nav>
             </div>
@@ -52,6 +52,7 @@
         </header>
 
         <main class="main-container">
+            <div id="visualizer"></div>
             <div class="background-gradient">
                 <h1>Tutoriais</h1>
             </div>
@@ -66,7 +67,7 @@
                         <i class="bi bi-x"></i>
                     </div>
                     <div class="item-content">
-                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(event, this)">
+                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(this)">
                             <img class="img-item" src="./sources/thumbs/whats.png" alt="">
                             <iframe src="https://www.youtube.com/embed/pSzAFlKw0EA?si=w9U1yWJanDaj8QEC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <h3>Como instalar o Whatsapp!</h3>
@@ -80,7 +81,7 @@
                         <i class="bi bi-x"></i>
                     </div>
                     <div class="item-content">
-                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(event, this)">
+                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(this)">
                             <img class="img-item" src="./sources/thumbs/uber.png" alt="">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/_A5gZ9rJi7w?si=fkXlI7rkt5JwcA9K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                            
                             <h3>Como pedir um Uber!</h3>
@@ -94,7 +95,7 @@
                         <i class="bi bi-x"></i>
                     </div>
                     <div class="item-content">
-                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(event, this)">
+                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(this)">
                             <img class="img-item" src="./sources/thumbs/ifood.png" alt="">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/BeInFChZr_M?si=wl4EU-KmY8kv629P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                            
                             <h3>Como pedir iFoood(Entrega de lanche)!</h3>
@@ -108,7 +109,7 @@
                         <i class="bi bi-x"></i>
                     </div>
                     <div class="item-content">
-                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(event, this)">
+                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(this)">
                             <img class="img-item" src="./sources/thumbs/store.png" alt="">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/A1J9ayHasEw?si=BEC_6B9n4LfMacA5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <h3>Como instalar um aplicativo na Play Store!</h3>
@@ -122,7 +123,7 @@
                         <i class="bi bi-x"></i>
                     </div>
                     <div class="item-content">
-                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(event, this)">
+                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(this)">
                             <img class="img-item" src="./sources/thumbs/pix.png" alt="">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/xQOHrGDzVuU?si=KwTy0LzjFor2Fr9r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <h3>Como fazer um PIX!</h3>
@@ -135,7 +136,7 @@
                         <i class="bi bi-x"></i>
                     </div>
                     <div class="item-content">
-                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(event, this)">
+                        <a href="#visualizer" class="video-link" onclick="toggleExpanded(this)">
                             <img class="img-item" src="./sources/thumbs/maps.png" alt="">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Vj12EJdaAg8?si=qCTLKx0Kr44a3Zno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <h3>Como utilizar o Google Maps!</h3>
@@ -148,10 +149,10 @@
             </section>
 
             <div class="pagination">
-                    <a href="#">&laquo;</a>
+                    <a href="tutoriais.html">&laquo;</a>
                     <a href="tutoriais.html" class="active">1</a>
                     <a href="tutoriais2.html">2</a>
-                    <a href="#">&raquo;</a>
+                    <a href="tutoriais2.html">&raquo;</a>
                   </div>
             </div>
         </main>
@@ -159,10 +160,10 @@
         <footer class="footer-container">
             <div class="footer-content">
                 <div class="logo-content">
-                    <img src="./sources/imgs/logo-branca.png" alt="">
+                    <img src="./sources/imgs/logo-branca.png" alt="Logo">
                 </div>
                 <div class="footer-menu">
-                    <img src="./sources/imgs/unifacisa-logo2-removebg-preview.png" alt="">
+                    <img src="./sources/imgs/unifacisa-logo2-removebg-preview.png" alt="Logo-facisa">
                     <a href="sobreNos.html">SOBRE NÓS</a>
                 </div>
                 <div class="footer-bottom">

@@ -16,13 +16,15 @@ escurecedor.addEventListener('click', ()=>{
     menuLateral.classList.remove('abrir-menu');
 })
 
-function toggleExpanded(event, element) {
-    /*event.preventDefault(); // Evita o comportamento padrão do link*/
+function toggleExpanded(element) {
     var articles = document.querySelectorAll('.article-content');
     articles.forEach(function(article) {
         article.classList.remove('expanded');
     });
     element.closest('.article-content').classList.add('expanded');
+    
+    var sectionContent = document.querySelector('.section-content');
+    sectionContent.style.setProperty('grid-template-rows', 'repeat(3, 1fr)');
 
 }
 
