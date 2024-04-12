@@ -22,10 +22,6 @@ function toggleExpanded(element) {
         article.classList.remove('expanded');
     });
     element.closest('.article-content').classList.add('expanded');
-    
-    var sectionContent = document.querySelector('.section-content');
-    sectionContent.style.setProperty('grid-template-rows', 'repeat(3, 1fr)');
-
 }
 
 botoesCloseArticle.forEach(function(botaoClose) {

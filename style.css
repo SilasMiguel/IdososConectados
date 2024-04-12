@@ -162,7 +162,7 @@ a {
         margin: 25px auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
+        grid-auto-rows: 1fr;
         gap: 15px;
         & .article-content {
             background-color: #f1f4fc;
@@ -305,6 +305,39 @@ a {
             background-color: white;
             border-radius: 15px;
         }
+        & .feedback-formulario {
+            width: 90%;
+            margin: 0 auto;
+            & h2 {
+                margin: 15px 0;
+            }
+            & input {
+                font-size: 15pt;
+                width: 50%;
+                min-width: 360px;
+            }
+            & #sugestao {
+                font-size: 15pt;
+                width: 50%;
+                min-width: 360px;
+                resize: none;
+            }
+            & .form-submit-button {
+                width: 30%;
+                min-width: 148px;
+                background: #f9f9f9;
+                color: #000000;
+                border-radius: 20px;
+                text-shadow: none;
+                }
+            & .form-submit-button:hover {
+                background: #016ABC;
+                color: #fff;
+                border-radius: 20px;
+                text-shadow: none;
+                cursor: pointer;
+                }
+        }
     }
     & .background-gradient {
         width: 100%;
@@ -317,6 +350,7 @@ a {
         }
     }
 
+    /* SOBRE-NOS MAIN */
     & #main-sobre-nos {
         display: flex;
         flex-direction: column;
@@ -325,7 +359,6 @@ a {
         width: 90%;
         margin: auto;
         & .description-sobre-nos {
-
             background-color: white;
             border-radius: 10px;
             display: flex;
@@ -349,8 +382,6 @@ a {
         }
     }
     & .github {
-        
-        
         & ul {
             margin: auto;
             display: flex;
@@ -475,7 +506,6 @@ a {
     }
 
     .main-container .section-content .article-content.expanded {
-
         grid-column: span 1;
         grid-row: span 2;
         order: -1;
@@ -513,6 +543,17 @@ a {
         }
         
     }
+
+    .main-container .inicio-description-content {
+        & img {
+            width: 97%;
+        }
+    }
+
+    .main-container .form-content input {
+        width: 80%;
+    }
+    
 
     .main-container .section-content .article-content {
         border-radius: 0;

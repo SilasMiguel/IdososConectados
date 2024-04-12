@@ -55,28 +55,26 @@
             <div class="background-gradient">
                 <h1>Como podemos melhorar?</h1>
             </div>
-           <section id="main-sobre-nos">
-            <div class="description-sobre-nos">
-                <p>Sua opinião é fundamental para nós. Nos ajude a melhorar nossos serviços compartilhando seus comentários. Seja um elogio, uma sugestão ou uma preocupação, cada palavra importa. Obrigado por dedicar seu tempo para nos ajudar a crescer!</p>
+            <div class="inicio-description-content">
+                <div class="feedback-content">
+                    <p>Sua opinião é fundamental para nós. Nos ajude a melhorar nossos serviços compartilhando seus comentários. Seja um elogio, uma sugestão ou uma preocupação, cada palavra importa. Obrigado por dedicar seu tempo para nos ajudar a crescer!</p>
+                </div>
+                <div class="feedback-formulario">
+                    <h2>Envie sua Sugestão</h2>
+                    <form>
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" required><br>
+                        
+                        <label for="numero">Número:</label><br>
+                        <input type="tel" name="numero" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                        
+                        <label for="sugestao">Sugestão:</label><br>
+                        <textarea id="sugestao" name="sugestao" rows="4" required></textarea><br><br>
+                        
+                        <input class="form-submit-button" type="submit" value="Enviar">
+                    </form>            
+                </div>  
             </div>
-           
-            <section>
-                <div class="formulario-feedback">
-                <h2>Envie sua Sugestão</h2>
-                <form method="POST">
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    
-                    <label for="numero">Número:</label><br>
-                    <input type="tel" id="numero" name="numero" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
-                    
-                    <label for="sugestao">Sugestão:</label><br>
-                    <textarea id="sugestao" name="sugestao" rows="4" cols="50" required></textarea><br><br>
-                    
-                    <input id = "enviar" type="submit" value="Enviar">
-                </form>            
-                  </div>
-            </section>
         </main>
         <footer class="footer-container">
             <div class="footer-content">
@@ -85,7 +83,7 @@
                 </div>
                 <div class="footer-menu">
                     <img src="./sources/imgs/unifacisa-logo2-removebg-preview.png" alt="Facisa-logo">
-                    <a href="">SOBRE NÓS</a>
+                    <a href="sobreNos.html">SOBRE NÓS</a>
                 </div>
                 <div class="footer-bottom">
                     <h3>@todos os direitos reservados.</h3>
